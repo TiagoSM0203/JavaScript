@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificacao de nacionalidade</title>
+</head>
+<body>
+    <h1>Veficacao de nacionalidade</h1>
+
+    Nacionalidade: <input type="text" name="txtna" id="txtna">
+    <input type="button" value="Verificar" onclick="calc()">
+    <div id="res"></div>
+
+    <script>
+        function calc() {
+            var txtn = document.getElementById('txtna')
+            var res = document.getElementById('res')
+            var pais = String(txtn.value)
+            res.innerHTML = `<p>Sua nacionalidade e ${pais}!</p>`
+            if (pais == 'brasil') {
+                res.innerHTML = `<p>Voce e da putaria!</p>`
+            } else {
+                res.innerHTML = `<p>Voce e gringo fodido</p>`
+            }
+            
+        }
+    </script>
+</body>
+</html>
