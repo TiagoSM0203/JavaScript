@@ -19,6 +19,16 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
 }
 
+#res p {
+    text-align: center;
+}
+
+#botao {
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
 footer {
     color: white;
     text-align: center;
